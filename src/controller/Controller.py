@@ -1,10 +1,9 @@
-import os
-from api.shipsAPI import ShipListAPIController
-from api.tenderListAPI import TenderListAPIController
-from api.tenderDetailsAPI import TenderDetailsAPIController
-from database.mongoConnection import MongoDBController
-from database.mysqlConnection import MySQLController
-from model import tenderList
+from src.api.shipsAPI import ShipListAPIController
+from src.api.tenderListAPI import TenderListAPIController
+from src.api.tenderDetailsAPI import TenderDetailsAPIController
+from src.database.mongoConnection import MongoDBController
+from src.database.mysqlConnection import MySQLController
+from src.model import tenderList
 import pandas as pd
 from datetime import datetime
 

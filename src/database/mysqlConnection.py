@@ -46,7 +46,7 @@ class MySQLController:
         s = {}
         for i, obj in enumerate(['tender', 'purchaser', 'ship']):
             for layer in ['raw', 'stg', f't0{i+1}']:
-                with open(f'database/ddl/{layer}_{obj}.sql', 'r') as f:
+                with open(f'../sql/ddl/{layer}_{obj}.sql', 'r') as f:
                     statement = f.read()
                 s[f'{layer}_{obj}'] = statement
 
@@ -78,7 +78,7 @@ class MySQLController:
     def populate(self, object_names: List[str]):
         statements = {}
         for object_name in object_names:
-            with open(f'database/dml/{object_name}.sql', 'r') as f:
+            with open(f'../sql/dml/{object_name}.sql', 'r') as f:
                 statements[object_name] = f.read()
         with self.connection as connection:
             with connection.cursor() as cursor:

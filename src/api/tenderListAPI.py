@@ -3,7 +3,7 @@ from requests.exceptions import RequestException
 from time import sleep
 from dataclasses import asdict
 from typing import List
-from model.tenderList import ApiResponse, ApiParameters, TenderSchema
+from src.model.tenderList import ApiResponse, ApiParameters, TenderSchema
 
 
 class TenderListAPIController:

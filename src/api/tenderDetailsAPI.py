@@ -1,6 +1,6 @@
 import requests
 from requests.exceptions import RequestException
-from model.tenderDetails import TenderDetailsSchema
+from src.model.tenderDetails import TenderDetailsSchema
 
 
 class TenderDetailsAPIController:

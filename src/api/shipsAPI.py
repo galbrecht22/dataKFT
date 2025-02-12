@@ -2,7 +2,7 @@ import os
 import requests
 from requests.exceptions import RequestException
 from typing import List
-from model.ships import ShipSchema
+from src.model.ships import ShipSchema
 from dotenv import load_dotenv
 
 
