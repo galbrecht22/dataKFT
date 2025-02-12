@@ -7,7 +7,7 @@
 ## Objects
 ### `controller` module
 <b>Controller</b> - the central object for the coordination of data processing.
-Executes extract, load and transform steps in sequence, delegating data manipulation logic to the respective Controller objects.
+Executes extract, load and transform steps in sequence, delegating data manipulation logic to the respective `Controller` objects.
 
 ### `model` module
 <b>TenderSchema</b> - dataclass for `Tender` objects to validate schema retrieved from `tenders` endpoint of `https://tenders.guru/api/hu/` API.  
