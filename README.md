@@ -20,16 +20,14 @@ Executes extract, load and transform steps in sequence, delegating data manipula
 <b>ShipListAPIController</b> - controller object to execute requests for `ships` endpoint of `https://data-engineer-interview-api.up.railway.app/` API and retrieve `Ship` objects.
 
 ### `database` module
-<b>MongoDBController</b> - controller object to manipulate data retrieved from APIs and persist them in raw format to MongoDB.  
-MongoDB has been chosen as database platform to load raw data from API sources.  
+<b>MongoDBController</b> - controller object to manipulate data retrieved from APIs and persist them in raw format to MongoDB. MongoDB has been chosen as database platform to load raw data from API sources.  
 There are two main functions implemented - `build()`, `store()` and `load()`.  
-Purpose of `build()` is to initialize the data objects used during data processing.  
-Purpose of `store()` is to save a list of `dict` objects into a collection as documents.  
-Purpose of `load()` is to retrieve all documents from a collection.  
-<b>MySQLController</b> - controller object to execute predefined ddl and dml scripts on MySQL database tables.  
-MySQL has been chosen as backend platform to serve the required visualization.  
+* Purpose of `build()` is to initialize the data objects used during data processing.  
+* Purpose of `store()` is to save a list of `dict` objects into a collection as documents.  
+* Purpose of `load()` is to retrieve all documents from a collection.  
+<b>MySQLController</b> - controller object to execute predefined ddl and dml scripts on MySQL database tables. MySQL has been chosen as backend platform to serve the required visualization.  
 There are three main functions implemented - `build()`, `bulk_insert()` and `populate()`.  
-Purpose of `build()` is to initialize the data objects used during data processing.  
-Purpose of `bulk_insert()` is to insert a list of records stored in memory into data objects. Used in `load` phase.  
-Purpose of `populate()` is to execute predefined `INSERT` statements. Used in `transform` phase.
+* Purpose of `build()` is to initialize the data objects used during data processing.  
+* Purpose of `bulk_insert()` is to insert a list of records stored in memory into data objects. Used in `load` phase.  
+* Purpose of `populate()` is to execute predefined `INSERT` statements. Used in `transform` phase.
 
