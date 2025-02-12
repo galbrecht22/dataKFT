@@ -1,7 +1,7 @@
 from controller.Controller import Controller
 
 INIT = True
-EXTRACT = False
+EXTRACT = True
 LOAD = True
 TRANSFORM = True
 
